@@ -19,16 +19,16 @@ The development of the project was driven by a TDD approach, including:
 
 #### Showing all the appointments booked for a day
 
-![Showing appointments]()
+![Showing appointments](https://github.com/DuyguY/scheduler/blob/master/docs/%20appointment-form.png)
 
 #### Editing an appointment
 
-![Editing an appointment]()
+![Editing an appointment](https://raw.githubusercontent.com/DuyguY/scheduler/master/docs/%20appointment-confirm.png)
 
 
 #### Deleting an appointment
 
-![Deleting an appointment]()
+![Deleting an appointment](https://github.com/DuyguY/scheduler/blob/master/docs/%20appointment-edit.png)
 
 
 ## Setup
