@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import axios from "axios";
 import { startSession } from "pg/lib/sasl";
 
+// Establishing state structure for app
 export default function useApplicationData() {
   const [state, setState] = useState({
     day: "Monday",
@@ -9,6 +10,8 @@ export default function useApplicationData() {
     appointments: {},
     interviewers: {},
   });
+
+    // Retrieves data from the server database to populate Appointments, Interviewers and Days
   useEffect(() => {
     Promise.all([
       axios.get("/api/days"),
@@ -26,6 +29,7 @@ export default function useApplicationData() {
       .catch((err) => console.log(err));
   }, []);
 
+  // to handles state management for selecting days on the DayList component
   const setDay = (day) => setState({ ...state, day });
 
   function bookInterview(id, interview) {

@@ -10,6 +10,7 @@ export function formatSpots(props) {
   );
 }
 
+// to handles behaviour for individual days.
 export default function DayListItem(props) {
   const dayClass = classNames("day-list__item", {
     "day-list__item--selected": props.selected,

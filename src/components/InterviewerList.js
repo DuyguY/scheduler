@@ -3,6 +3,7 @@ import "../styles/InterviewerList.scss";
 import InterviewerListItem from "./InterviewerListItem";
 import PropTypes from "prop-types";
 
+// to display a list of available interviewers for selection on the Form component
 function InterviewerList(props) {
   const { value, onChange } = props;
   const parsedInterviewerListItem = props.interviewers.map((interviewer) => {

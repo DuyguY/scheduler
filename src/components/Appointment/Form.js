@@ -2,24 +2,24 @@ import React, { useState } from "react";
 import Button from "../Button";
 import InterviewerList from "../InterviewerList";
 
-// Form handles booking appointments for students and allow a user to edit and delete appointments.
+// to handles booking appointments for students and allow a user to edit and delete appointments
 export default function Form(props) {
   const [student, setStudent] = useState(props.student || "");
   const [interviewer, setInterviewer] = useState(props.interviewer || null);
   const [error, setError] = useState("");
 
-  // Resets name value entered by user, and selected interviewer
+  // to resets name value entered by user, and selected interviewer
   function reset(props) {
     setStudent("");
     setInterviewer("");
   }
 
-  // Cancel resets the form and navigates back
+  // to cancel resets the form and navigates back
   function cancel(props) {
     reset(props);
     props.onCancel();
   }
-
+  // to create error messages
   function validate() {
     if (student === "") {
       setError("Student name cannot be blank");
